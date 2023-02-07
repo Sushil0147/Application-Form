@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="form-body">
+        <h1>Application Form</h1>
+        <hr>
+        <div class="form-label">
+            <p for="" class="centre-heading-1"><u>User Details</u></p>
+            <form action="RegistrationForm.html" onSubmit="return validate();" method="post">
+                <div class="form-style">
+                    <div class="form-style-full">
+                        <div class="form-style-input">
+                            <label for="name">Name</label><br>
+                            <input type="text" id="name" name="name" autocomplete="off" class="input-section"><br>
+                        </div>
+                        <div class="form-style-input">
+                            <label for="regno">Contact Number</label><br>
+                            <input type="text" id="regno" name="regno" autocomplete="off" class="input-section"><br>
+                        </div>
+                        <div class="form-style-input">
+                            <label for="email">Email</label><br>
+                            <input type="text" id="email" name="email" autocomplete="off" class="input-section"><br>
+                        </div>
+                        <div>
+                            <label for="dob">Date of Birth</label><br>
+                            <input type="date" id="date" name="date" autocomplete="off" class="input-section"><br>
+                        </div>
+                        <br>
+                        <div class="form-style-input">
+                            <label for="gender">Gender</label><br>
+                            <input type="radio" id="male" name="male" value="male">
+                              <label for="male">Male</label>
+                            <input type="radio" id="female" name="female" value="female">
+                              <label for="female">female</label>
+                            <input type="radio" id="Others" name="Others" value="Others">
+                              <label for="Others">Others</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="two-address-details">
+                        <div>
+                            <p for="" class="centre-heading-2"><u>Address Details</u></p>
+                            <label for="">Present Address</label><br>
+                            <label for="address"></label>
+                            <input type="text" class="input-address-communication" placeholder="At">
+                            <input type="text" class="input-address-communication" placeholder="Post">
+                            <input type="text" class="input-address-communication" placeholder="District"><br>
+                            <label for="address"></label>
+                            <input type="text" class="input-address-communication" placeholder="State">
+                            <input type="text" class="input-address-communication" placeholder="Pin">
+                            <input type="text" class="input-address-communication" placeholder="Phone">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="">Communication Details</label><br>
+                            <label for="address"></label>
+                            <input type="text" class="input-address-communication" placeholder="At">
+                            <input type="text" class="input-address-communication" placeholder="Post">
+                            <input type="text" class="input-address-communication" placeholder="District"><br>
+                            <label for="address"></label>
+                            <input type="text" class="input-address-communication" placeholder="State">
+                            <input type="text" class="input-address-communication" placeholder="Pin">
+                            <input type="text" class="input-address-communication" placeholder="Phone">
+                        </div>
+                    </div>
+                    <br>
+                    <div>
+                        <p for="" class="centre-heading-3"><u>Education Details</u></p>
+                        <div class="education">
+                            <label for="address">&nbsp;Exam &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <label
+                                for="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Board&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <label for="address">Percentage/CGPA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <label for="address">&nbsp;&nbsp;&nbsp;&nbsp;Division</label><br>
+                            <label for="">&nbsp;Matriculation(10th)</label>
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address"><br>
+                            <label for="">&nbsp;Intermediate(12th)&nbsp;&nbsp;</label>
+                            <label for="address"></label>
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address"><br>
+                            <label
+                                for="">&nbsp;B-Tech&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <label for="address"></label>
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address">
+                            <input type="text" class="input-address">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="bottom-section">
+                        <div>
+                            <label for="file">Upload Photo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="file">
+                            <br><br>
+                            <label for="file">Upload Signature &nbsp;&nbsp;</label>
+                            <input type="file">
+                        </div>
+                        <div>
+                            <p class="chech-box"><input type="checkbox">Using a checkbox means a user must take an
+                                action
+                                and click to show that they agree to your Privacy Policy.</p>
+                        </div>
+                        <div>
+                            <input type="submit" value="submit" id="submit">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </script>
+    <script type="text/javaScript" src="./validation.js"></script>
+</body>
+
+</html>
